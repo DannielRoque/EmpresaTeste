@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">TesteNovatoAndroid</string>
+    <string name="Comercial">comercial_decricao</string>
+    <string name="descricao_comercial">Comercial</string>
+    <string name="desenvolvimento_descricao">Desenvolvimento</string>
+    <string name="suporte_tecnico_descricao">Suporte T.</string>
+    <string name="administrativo_descricao">Administrativo</string>
+    <string name="colaboradores_descricao">Colaboradores</string>
+    <string name="formulario_nome_hint">Nome</string>
+    <string name="formulario_sobrenome_hint">Sobrenome</string>
+    <string name="formulario_data_nascimento_hint">Data de nascimento</string>
+    <string name="formulario_cardo_descricao">Cargo</string>
+    <string name="formulario_nivel_experiencia_hint">Nível de experiência</string>
+
+    <string-array name="cargo_empresa">
+        <item>Comercial</item>
+        <item>Suporte T.</item>
+        <item>Administrativo</item>
+        <item>Desenvolvimento</item>
+    </string-array>
+</resources>
