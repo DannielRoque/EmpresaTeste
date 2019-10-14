@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<TextView android:id="@+id/activity_formulario_spinner_personalizado"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <TextView
-        android:id="@+id/activity_formulario_spinner_personalizado"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="24sp"
-        android:background="#bababa"
-        android:textColor="#c6c6c6"/>
-
-</LinearLayout>
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:background="#ebebeb"
+    tools:text="Texto"
+    android:textStyle="bold"
+    android:textColor="#cfcfcf"
+    android:padding="10sp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" />

@@ -140,8 +140,21 @@
         android:layout_marginTop="280dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:background="#ebebeb"
+        android:background="@drawable/ic_action_expandir"
         android:scrollbarSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="290dp"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="280dp"
+        android:src="@drawable/ic_action_expandir"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

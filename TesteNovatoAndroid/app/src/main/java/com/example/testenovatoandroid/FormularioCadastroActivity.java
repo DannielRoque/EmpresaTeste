@@ -1,19 +1,15 @@
 package com.example.testenovatoandroid;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RatingBar;
 import android.widget.Spinner;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.testenovatoandroid.dao.EmpresaDAO;
 import com.example.testenovatoandroid.model.Funcionario;
-
 import java.util.ArrayList;
 
 public class FormularioCadastroActivity extends AppCompatActivity {
@@ -37,18 +33,13 @@ public class FormularioCadastroActivity extends AppCompatActivity {
 
         empresa = (Spinner)findViewById(R.id.activity_formulario_spinner);
         final ArrayAdapter adapter = ArrayAdapter.createFromResource(this, R.array.cargo_empresa,
-                android.R.layout.simple_spinner_dropdown_item);
+                R.layout.activity_formulario_spinner);
         empresa.setAdapter(adapter);
-
-
 
         final RatingBar valorRating = findViewById(R.id.testeHUss);
         final int rating = (int) valorRating.getRating();
-
         botaoNovoAluno(valorRating);
-
-        Log.e("Widget", "-------------------------------------------------------------: "+rating, null);
-    }
+  }
 
     private void botaoNovoAluno(final RatingBar valorRating) {
         Button botaoSalvar = findViewById(R.id.activity_formulario_cadastro_botao_salvar);
