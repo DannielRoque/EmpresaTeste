@@ -84,16 +84,16 @@ public class MainActivity extends AppCompatActivity {
         lista = dao.selectAll();
         adapter = new ArrayAdapter<>(this, R.layout.item_funcionario, lista);
         listViewActivity.setAdapter(adapter);
-        listViewActivity.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
-            @Override
-            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int position, long id) {
-                Log.e("Teste Widget", String.valueOf(id));
-                Funcionario funcionarioSelecionado = (Funcionario) adapterView.getItemAtPosition(position);
-                dao.delete(funcionarioSelecionado);
-                adapter.remove(funcionarioSelecionado);
-                return true;
-            }
-        });
+//        listViewActivity.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+//            @Override
+//            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int position, long id) {
+//                Log.e("Teste Widget", String.valueOf(id));
+//                Funcionario funcionarioSelecionado = (Funcionario) adapterView.getItemAtPosition(position);
+//                dao.delete(funcionarioSelecionado);
+//                adapter.remove(funcionarioSelecionado);
+//                return true;
+//            }
+//        });
     }
 
     private void abreFormularioCadastro() {
