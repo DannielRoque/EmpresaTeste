@@ -1,4 +1,4 @@
-package com.example.testenovatoandroid;
+package com.example.testenovatoandroid.ui.view;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,9 +8,13 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.RatingBar;
 import android.widget.TextView;
+
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.testenovatoandroid.R;
 import com.example.testenovatoandroid.dao.EmpresaDAO;
 import com.example.testenovatoandroid.model.Funcionario;
+
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
@@ -80,16 +84,6 @@ public class MainActivity extends AppCompatActivity {
         lista = dao.selectAll();
         adapter = new ArrayAdapter<>(this, R.layout.item_funcionario, lista);
         listViewActivity.setAdapter(adapter);
-//        listViewActivity.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
-//            @Override
-//            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int position, long id) {
-//                Log.e("Teste Widget", String.valueOf(id));
-//                Funcionario funcionarioSelecionado = (Funcionario) adapterView.getItemAtPosition(position);
-//                dao.delete(funcionarioSelecionado);
-//                adapter.remove(funcionarioSelecionado);
-//                return true;
-//            }
-//        });
     }
 
     private void abreFormularioCadastro() {

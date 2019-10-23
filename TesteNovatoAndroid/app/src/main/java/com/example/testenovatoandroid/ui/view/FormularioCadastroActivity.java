@@ -1,4 +1,4 @@
-package com.example.testenovatoandroid;
+package com.example.testenovatoandroid.ui.view;
 
 import android.os.Bundle;
 import android.view.View;
@@ -7,9 +7,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RatingBar;
 import android.widget.Spinner;
+
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.testenovatoandroid.R;
 import com.example.testenovatoandroid.dao.EmpresaDAO;
 import com.example.testenovatoandroid.model.Funcionario;
+
 import java.util.ArrayList;
 
 public class FormularioCadastroActivity extends AppCompatActivity {
